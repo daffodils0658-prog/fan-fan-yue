@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選擇時間 - 約吃飯</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f8f9fa; padding: 20px; color: #333; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h2 { color: #ff6b6b; }
+        .time-slot { background: white; padding: 15px; margin-bottom: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: 0.2s; }
+        .time-slot:hover { transform: scale(1.02); }
+        .time-slot.active { border: 2px solid #ff6b6b; background-color: #fff0f0; }
+        .btn-submit { background-color: #ff6b6b; color: white; border: none; padding: 15px; font-size: 18px; border-radius: 30px; cursor: pointer; width: 100%; margin-top: 20px; text-decoration: none; display: block; text-align: center; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>阿明邀請你吃晚餐 🍽️</h2>
+        <p>請點選你有空的時間</p >
+    </div>
+
+    <div class="time-slot" onclick="this.classList.toggle('active')">週五晚上 18:00 - 20:00</div>
+    <div class="time-slot" onclick="this.classList.toggle('active')">週六中午 12:00 - 14:00</div>
+    <div class="time-slot" onclick="this.classList.toggle('active')">週六晚上 18:00 - 20:00</div>
+
+    <a href=" " class="btn-submit">送出我的時間 🚀</a >
+</body>
+</html>
